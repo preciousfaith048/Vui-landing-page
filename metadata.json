@@ -1,0 +1,6 @@
+{
+  "name": "Venite University",
+  "description": "A premium, fully responsive, and elegant website for Venite University showcasing undergraduate and postgraduate programmes, campus life, historical timeline, and an interactive contact portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

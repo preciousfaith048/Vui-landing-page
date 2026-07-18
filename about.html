@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Venite University</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!-- Preloader Animation -->
+    <div id="preloader" id="loading_animation">
+      <div class="spinner" id="spinner_element"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white scrolled" id="main_navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo_container">
+          <i class="fa-solid fa-graduation-cap text-primary" style="font-size: 2rem;"></i>
+          <span>VENITE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar_toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar_links_list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" id="nav_link_home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" id="nav_link_about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programmes.html" id="nav_link_programmes">Programmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" id="nav_link_contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex" id="navbar_btn_container">
+            <a href="contact.html#application-process" class="btn-primary-venite" id="nav_btn_apply">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Subpage Immersive Header -->
+    <section class="hero-section" style="min-height: 45vh; padding: 140px 0 60px 0;" id="about_hero">
+      <div class="container" style="position: relative; z-index: 2;" data-aos="fade-up">
+        <span class="badge-venite" style="background: rgba(255,255,255,0.1); color: #fff;">OUR MISSION & HERITAGE</span>
+        <h1 style="font-size: 3rem;">About Venite University</h1>
+        <p style="font-size: 1.1rem; max-width: 600px; margin-bottom: 0;">Empowering creative thinkers and ethical leaders to cultivate high-impact innovation, scientific excellence, and global service.</p>
+      </div>
+    </section>
+
+    <!-- University Overview: History, Mission, Vision, Values -->
+    <section class="section-padding" id="university_overview">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2 class="mb-4">Our History and Vision</h2>
+            <p class="text-muted">Established in 1982, Venite University began as an elite research-intensive academy before expanding into a premier global institution. Over the decades, we have remained true to our core identity: merging standard rigorous science with a passionate commitment to humanist and community service.</p>
+            <p class="text-muted">Today, Venite is home to over 15,000 brilliant students working across 6 highly active faculties, striving to discover new solutions to some of humanity's most pressing ecological, social, and technological challenges.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="row g-4">
+              <!-- Mission Card -->
+              <div class="col-md-6">
+                <div class="stat-box" style="text-align: left; height: 100%; border-top: 4px solid var(--secondary-color);">
+                  <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; font-size: 1.25rem; margin-bottom: 1rem;"><i class="fa-solid fa-bullseye"></i></div>
+                  <h4 style="font-size: 1.2rem; margin-bottom: 0.75rem;">Our Mission</h4>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">To deliver transformative academic curricula, empower research, and foster high-integrity leaders capable of addressing grand challenges.</p>
+                </div>
+              </div>
+              <!-- Vision Card -->
+              <div class="col-md-6">
+                <div class="stat-box" style="text-align: left; height: 100%; border-top: 4px solid var(--primary-color);">
+                  <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; font-size: 1.25rem; margin-bottom: 1rem;"><i class="fa-solid fa-eye"></i></div>
+                  <h4 style="font-size: 1.2rem; margin-bottom: 0.75rem;">Our Vision</h4>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">To be a leading global university recognized for innovative teaching, impactful discoveries, and cultivating a progressive student collective.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Values Row -->
+        <div class="row g-4 mt-4" id="core_values_row" data-aos="fade-up">
+          <div class="col-12 text-center mb-2">
+            <span class="badge-venite">FOUNDATIONS</span>
+            <h3 class="mb-4">Our Core Values</h3>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="glass-card text-center" style="padding: 2rem 1.5rem;">
+              <i class="fa-solid fa-shield-halved text-primary fs-2 mb-3"></i>
+              <h5 class="fw-bold">Integrity</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Maintaining the highest standards of ethics and research transparency.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="glass-card text-center" style="padding: 2rem 1.5rem;">
+              <i class="fa-solid fa-award text-primary fs-2 mb-3"></i>
+              <h5 class="fw-bold">Excellence</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Pursuing continuous rigor and quality across all academic programs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="glass-card text-center" style="padding: 2rem 1.5rem;">
+              <i class="fa-solid fa-lightbulb text-primary fs-2 mb-3"></i>
+              <h5 class="fw-bold">Innovation</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Fostering original thought, creative exploration, and tech breakthroughs.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="glass-card text-center" style="padding: 2rem 1.5rem;">
+              <i class="fa-solid fa-users text-primary fs-2 mb-3"></i>
+              <h5 class="fw-bold">Diversity</h5>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Promoting an open global sanctuary of thoughts, backgrounds, and identities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Venite University: Bento Grid -->
+    <section class="section-padding section-bg-light" id="why_choose_venite">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="badge-venite">THE VENITE ADVANTAGE</span>
+          <h2>Why Choose Venite University</h2>
+          <p>We provide a comprehensive ecosystem designed to guarantee personal safety, intellectual growth, and ultimate career preparation.</p>
+        </div>
+        <div class="row g-4" id="advantage_grid">
+          <!-- Item 1: Modern Classrooms -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card d-flex gap-4 p-4 align-items-start">
+              <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; flex-shrink: 0;"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <div>
+                <h5 class="fw-bold mb-2">Modern Classrooms</h5>
+                <p class="text-muted mb-0" style="font-size: 0.875rem;">Interactive lecture theaters equipped with projection engines and spatial acoustics for optimized focus.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2: Research & Innovation -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass-card d-flex gap-4 p-4 align-items-start">
+              <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; flex-shrink: 0;"><i class="fa-solid fa-microscope"></i></div>
+              <div>
+                <h5 class="fw-bold mb-2">Research & Innovation</h5>
+                <p class="text-muted mb-0" style="font-size: 0.875rem;">State-funded research clinics and robotics workshops supporting real patent creation.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3: Qualified Lecturers -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="glass-card d-flex gap-4 p-4 align-items-start">
+              <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; flex-shrink: 0;"><i class="fa-solid fa-user-tie"></i></div>
+              <div>
+                <h5 class="fw-bold mb-2">Qualified Lecturers</h5>
+                <p class="text-muted mb-0" style="font-size: 0.875rem;">Mentorship under world-class doctors, fellows, authors, and industry pioneers.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4: Generous Scholarships -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card d-flex gap-4 p-4 align-items-start">
+              <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; flex-shrink: 0;"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <div>
+                <h5 class="fw-bold mb-2">Scholarships & Grants</h5>
+                <p class="text-muted mb-0" style="font-size: 0.875rem;">Over $5M distributed annually in merit-based and need-based educational sponsorships.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5: Unwavering Student Support -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass-card d-flex gap-4 p-4 align-items-start">
+              <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; flex-shrink: 0;"><i class="fa-solid fa-handshake-angle"></i></div>
+              <div>
+                <h5 class="fw-bold mb-2">24/7 Student Support</h5>
+                <p class="text-muted mb-0" style="font-size: 0.875rem;">Comprehensive career workshops, mental counseling support, and personal safety lines.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 6: Global Partnerships -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="glass-card d-flex gap-4 p-4 align-items-start">
+              <div class="faculty-icon-wrapper" style="width: 50px; height: 50px; flex-shrink: 0;"><i class="fa-solid fa-earth-americas"></i></div>
+              <div>
+                <h5 class="fw-bold mb-2">Global Placements</h5>
+                <p class="text-muted mb-0" style="font-size: 0.875rem;">Strategic pathways with 100+ global corporate networks for instant student placements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Website Development Process Timeline -->
+    <section class="section-padding" id="development_process">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="badge-venite">ENGINEERING BEHIND THIS PORTAL</span>
+          <h2>Website Development Process</h2>
+          <p>Explore the systematic engineering lifecycle executed to design and deploy the premium, highly responsive Venite University website.</p>
+        </div>
+        
+        <div class="timeline" id="development_timeline">
+          <!-- Step 1: Requirement Analysis -->
+          <div class="timeline-container timeline-left" data-aos="fade-right">
+            <div class="timeline-card" id="timeline_step_1">
+              <span class="timeline-step">STEP 1</span>
+              <div class="timeline-title-icon">
+                <div class="timeline-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h4>Requirement Analysis</h4>
+              </div>
+              <p class="text-muted mb-0">Laid down the conceptual architecture based on academic goals, outlining the multi-page portal layout:</p>
+              <ul class="timeline-list">
+                <li>Understand university administrator and student needs</li>
+                <li>Identify key pages: Home, About, Programmes, Contact</li>
+                <li>Plan structural navigation and programmatic features</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 2: Planning -->
+          <div class="timeline-container timeline-right" data-aos="fade-left">
+            <div class="timeline-card" id="timeline_step_2">
+              <span class="timeline-step">STEP 2</span>
+              <div class="timeline-title-icon">
+                <div class="timeline-icon"><i class="fa-solid fa-sitemap"></i></div>
+                <h4>Planning & Architecture</h4>
+              </div>
+              <p class="text-muted mb-0">Engineered a comprehensive sitemap, page layouts, and the visual assets library:</p>
+              <ul class="timeline-list">
+                <li>Create high-fidelity responsive wireframes</li>
+                <li>Map the global semantic content hierarchy</li>
+                <li>Select professional typography (Poppins) and colors (Navy Blue, White, Cyan Accents)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 3: UI/UX Design -->
+          <div class="timeline-container timeline-left" data-aos="fade-right">
+            <div class="timeline-card" id="timeline_step_3">
+              <span class="timeline-step">STEP 3</span>
+              <div class="timeline-title-icon">
+                <div class="timeline-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                <h4>UI/UX Design</h4>
+              </div>
+              <p class="text-muted mb-0">Designed pristine interface elements maximizing usability and professional typography pairings:</p>
+              <ul class="timeline-list">
+                <li>Design glassmorphism layouts and button states</li>
+                <li>Optimize touch target sizing for mobile (min 44px)</li>
+                <li>Ensure high-contrast backgrounds for readability</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 4: Frontend Development -->
+          <div class="timeline-container timeline-right" data-aos="fade-left">
+            <div class="timeline-card" id="timeline_step_4">
+              <span class="timeline-step">STEP 4</span>
+              <div class="timeline-title-icon">
+                <div class="timeline-icon"><i class="fa-solid fa-code"></i></div>
+                <h4>Frontend Development</h4>
+              </div>
+              <p class="text-muted mb-0">Compiled clean, semantic markup linked to high-performance style directives:</p>
+              <ul class="timeline-list">
+                <li>Structure pages using HTML5 semantic elements</li>
+                <li>Build premium aesthetic directives in CSS3 (style.css)</li>
+                <li>Implement intersection observers and custom validation logic in JS (script.js)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 5: Testing -->
+          <div class="timeline-container timeline-left" data-aos="fade-right">
+            <div class="timeline-card" id="timeline_step_5">
+              <span class="timeline-step">STEP 5</span>
+              <div class="timeline-title-icon">
+                <div class="timeline-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                <h4>Testing & Quality Assurance</h4>
+              </div>
+              <p class="text-muted mb-0">Conducted robust, cross-device execution checks on active components:</p>
+              <ul class="timeline-list">
+                <li>Audit responsiveness across diverse screen bounds</li>
+                <li>Execute keyboard accessibility checks</li>
+                <li>Test form input validations and preloader performance</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 6: Deployment -->
+          <div class="timeline-container timeline-right" data-aos="fade-left">
+            <div class="timeline-card" id="timeline_step_6">
+              <span class="timeline-step">STEP 6</span>
+              <div class="timeline-title-icon">
+                <div class="timeline-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                <h4>Deployment & Maintenance</h4>
+              </div>
+              <p class="text-muted mb-0">Published the final multi-page application securely, paving the way for future updates:</p>
+              <ul class="timeline-list">
+                <li>Establish Git version control and repository architecture</li>
+                <li>Deploy static pages via fast container nodes (Vercel/Vite/Cloud)</li>
+                <li>Ensure clean, modular codebase for future feature additions</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer_section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a class="footer-brand" href="index.html" id="footer_logo_container">
+              <i class="fa-solid fa-graduation-cap text-white" style="font-size: 2rem;"></i>
+              <span>VENITE</span>
+            </a>
+            <p class="mt-3">A world-class university committed to fostering innovative minds, high-integrity leadership, and community development.</p>
+            <div class="social-icons" id="footer_social_icons">
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <h4>Quick Links</h4>
+            <ul class="footer-links" id="footer_links_list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programmes.html">Programmes</a></li>
+              <li><a href="contact.html#tuition-info">Admissions</a></li>
+              <li><a href="index.html#campus_life">Campus Life</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h4>Popular Programmes</h4>
+            <ul class="footer-links" id="footer_programmes_list">
+              <li><a href="programmes.html">Computer Science</a></li>
+              <li><a href="programmes.html">Doctor of Medicine (M.D.)</a></li>
+              <li><a href="programmes.html">Nursing B.Sc.</a></li>
+              <li><a href="programmes.html">Master of Business Admin (MBA)</a></li>
+              <li><a href="programmes.html">Mechanical Engineering</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter to receive the latest academic schedules, open days, and scholarship updates.</p>
+            <form class="newsletter-form" id="newsletter_subscription_form">
+              <input type="email" class="newsletter-input" placeholder="Your email address" aria-label="Newsletter email input" required>
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter button"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom" id="footer_bottom_row">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-6">
+              <p class="mb-0">&copy; 2026 Venite University. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div class="footer-bottom-links" id="footer_bottom_legal_links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" aria-label="Scroll to top button">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JS Script -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

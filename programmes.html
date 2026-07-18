@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Programmes | Venite University</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!-- Preloader Animation -->
+    <div id="preloader" id="loading_animation">
+      <div class="spinner" id="spinner_element"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white scrolled" id="main_navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo_container">
+          <i class="fa-solid fa-graduation-cap text-primary" style="font-size: 2rem;"></i>
+          <span>VENITE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar_toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar_links_list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" id="nav_link_home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" id="nav_link_about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="programmes.html" id="nav_link_programmes">Programmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" id="nav_link_contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex" id="navbar_btn_container">
+            <a href="#application-process" class="btn-primary-venite" id="nav_btn_apply">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Subpage Immersive Header -->
+    <section class="hero-section" style="min-height: 45vh; padding: 140px 0 60px 0;" id="programmes_hero">
+      <div class="container" style="position: relative; z-index: 2;" data-aos="fade-up">
+        <span class="badge-venite" style="background: rgba(255,255,255,0.1); color: #fff;">ACADEMIC DEGREES</span>
+        <h1 style="font-size: 3rem;">Our Programmes</h1>
+        <p style="font-size: 1.1rem; max-width: 600px; margin-bottom: 0;">Find the perfect academic pathway designed to expand your cognitive limits and secure your long-term career aspirations.</p>
+      </div>
+    </section>
+
+    <!-- Interactive Academic Tabs and Grids -->
+    <section class="section-padding" id="programmes_explorer">
+      <div class="container text-center">
+        <!-- Tab Navigation Buttons -->
+        <ul class="nav nav-pills nav-pills-venite" id="programmeTabs" role="tablist" data-aos="fade-up">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="undergrad-tab" data-bs-toggle="pill" data-bs-target="#undergrad" type="button" role="tab" aria-controls="undergrad" aria-selected="true">Undergraduate</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="postgrad-tab" data-bs-toggle="pill" data-bs-target="#postgrad" type="button" role="tab" aria-controls="postgrad" aria-selected="false">Postgraduate</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="certifications-tab" data-bs-toggle="pill" data-bs-target="#certifications" type="button" role="tab" aria-controls="certifications" aria-selected="false">Professional Certifications</button>
+          </li>
+        </ul>
+
+        <!-- Tab Content Panes -->
+        <div class="tab-content text-start" id="programmeTabsContent">
+          <!-- UNDERGRADUATE PROGRAMMES -->
+          <div class="tab-pane fade show active" id="undergrad" role="tabpanel" aria-labelledby="undergrad-tab">
+            <div class="row g-4">
+              <!-- Programme 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_cs">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Computing</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Years</span>
+                  </div>
+                  <h3>Computer Science</h3>
+                  <p>Study computing foundations, software structures, database algorithms, and modern systems engineering, paired with high-performance practical labs in cloud systems and artificial intelligence.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_nursing">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Medicine</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Years</span>
+                  </div>
+                  <h3>Nursing B.Sc.</h3>
+                  <p>Gain thorough training in patient care, community health, advanced pharmacology, and diagnostics. Practice in state-of-the-art simulation labs and tier-one research hospitals.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_medicine">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Medicine</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 6 Years</span>
+                  </div>
+                  <h3>Doctor of Medicine (M.D.)</h3>
+                  <p>A rigorous curriculum in biological foundations, anatomy, internal medicine, pathology, and clinical surgery designed for dedicated healthcare leaders of the next generation.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 4 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_pharmacy">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Medicine</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 5 Years</span>
+                  </div>
+                  <h3>Pharmacy Pharm.D.</h3>
+                  <p>Focuses on clinical therapeutics, medicinal chemical structures, pharmacy ethics, patient consultation, and cutting-edge pharmaceutical manufacturing techniques.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 5 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_accounting">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Business</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Years</span>
+                  </div>
+                  <h3>Accounting B.Sc.</h3>
+                  <p>Develop proficiency in forensic accounting, international taxation frameworks, financial reporting systems, and rigorous auditing practices aligned with global corporate structures.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 6 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_law">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Law</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 5 Years</span>
+                  </div>
+                  <h3>Law (LL.B.)</h3>
+                  <p>Master the principles of constitutional law, criminal jurisprudence, corporate governance, and international litigation through active mock trials and legal aid clinic programs.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 7 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_economics">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Business</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Years</span>
+                  </div>
+                  <h3>Economics B.Sc.</h3>
+                  <p>Analyze micro and macroeconomic policies, quantitative economic systems, econometric models, resource allocations, and international monetary frameworks.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 8 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_engineering">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Engineering</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Years</span>
+                  </div>
+                  <h3>Mechanical Engineering</h3>
+                  <p>Integrate material science principles, thermodynamics, fluid dynamics, manufacturing systems, and robotic systems with high-end computational design software labs.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Programme 9 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_masscomm">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Arts</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Years</span>
+                  </div>
+                  <h3>Mass Communication</h3>
+                  <p>A multi-disciplinary path covering digital media journalism, public relations campaigns, audio-visual broadcasting, and media sociology studies in modern TV studio facilities.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- POSTGRADUATE PROGRAMMES -->
+          <div class="tab-pane fade" id="postgrad" role="tabpanel" aria-labelledby="postgrad-tab">
+            <div class="row g-4">
+              <!-- Postgraduate 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_mba">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Business</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 2 Years</span>
+                  </div>
+                  <h3>MBA (Master of Business Admin)</h3>
+                  <p>Tailored for high-potential professionals aiming to master strategic planning, financial analytics, human leadership dynamics, and global venture management.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Postgraduate 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_msc_cs">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Faculty of Computing</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 2 Years</span>
+                  </div>
+                  <h3>M.Sc. Computer Science</h3>
+                  <p>Advanced studies in quantum computation algorithms, machine learning models, cybersecurity architectures, and big-data parallel processing infrastructures.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Postgraduate 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="prog_phd">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Graduate School</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 3-5 Years</span>
+                  </div>
+                  <h3>Doctor of Philosophy (Ph.D.)</h3>
+                  <p>Fully funded doctoral lines across computing, medical sciences, engineering, and arts. Focuses on original patent research and scholarly journal publications.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROFESSIONAL CERTIFICATIONS -->
+          <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+            <div class="row g-4">
+              <!-- Cert 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="cert_cissp">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Computing / Security</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 6 Months</span>
+                  </div>
+                  <h3>Cybersecurity Analyst (CISSP)</h3>
+                  <p>Prepare for the premier security certification covering risk frameworks, software security architectures, security operations, and digital cryptosystems management.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Cert 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="cert_pmp">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Business / Management</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 4 Months</span>
+                  </div>
+                  <h3>Project Management Professional (PMP)</h3>
+                  <p>Master agile development frameworks, resource budgeting pipelines, stakeholders communication, and risk mitigations aligned with global PMI standard guidelines.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <!-- Cert 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="programme-card" id="cert_cfa">
+                  <div class="programme-meta">
+                    <span class="prog-tag">Finance / Accounting</span>
+                    <span class="prog-duration"><i class="fa-regular fa-clock"></i> 12 Months</span>
+                  </div>
+                  <h3>Chartered Financial Analyst (CFA Prep)</h3>
+                  <p>An intensive prep curriculum for Level I & II CFA examinations covering ethics, equity investments, portfolio management, and derivatives analysis.</p>
+                  <a href="contact.html#contact_form_card" class="btn-primary-venite mt-auto">Apply Now <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission Requirements & Application Process Timeline -->
+    <section class="section-padding section-bg-light" id="admissions_info">
+      <div class="container">
+        <div class="row align-items-stretch g-5">
+          <!-- Requirements Panel -->
+          <div class="col-lg-6" data-aos="fade-up">
+            <span class="badge-venite">ADMISSIONS REQUIREMENT</span>
+            <h2 class="mb-4">Admission Guidelines</h2>
+            <div class="glass-card p-4" style="border-left: 5px solid var(--secondary-color);">
+              <h5 class="fw-bold mb-3">Undergraduate Entry Requirements</h5>
+              <ul class="timeline-list ps-0 mb-4" style="list-style: none;">
+                <li class="mb-2">Minimum of 5 High School Credits (including English and Mathematics)</li>
+                <li class="mb-2">Official High School Transcripts</li>
+                <li class="mb-2">Satisfactory score in Venite Matriculation Exam or global equivalent</li>
+                <li class="mb-2">Proof of English Language Proficiency (IELTS 6.5+ or TOEFL 85+ if applicable)</li>
+              </ul>
+              
+              <h5 class="fw-bold mb-3">Postgraduate Entry Requirements</h5>
+              <ul class="timeline-list ps-0 mb-0" style="list-style: none;">
+                <li class="mb-2">Bachelor's Degree from an accredited institution (Minimum GPA 3.0/4.0 or equivalent)</li>
+                <li class="mb-2">Two Academic Letters of Recommendation</li>
+                <li class="mb-2">Statement of Research Purpose / Personal Essay</li>
+                <li class="mb-2">Standardized GRE / GMAT test scores (where requested by program faculty)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Application Process -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" id="application-process">
+            <span class="badge-venite">APPLICATION PATHWAY</span>
+            <h2 class="mb-4">How to Apply</h2>
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="step-card">
+                  <div class="step-num">1</div>
+                  <div class="step-icon"><i class="fa-solid fa-user-plus"></i></div>
+                  <h5 class="fw-bold">Create Account</h5>
+                  <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Register in our digital admissions portal to start your application form.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="step-card">
+                  <div class="step-num">2</div>
+                  <div class="step-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
+                  <h5 class="fw-bold">Upload Files</h5>
+                  <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Attach your transcripts, personal statement, references, and proof of scores.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="step-card">
+                  <div class="step-num">3</div>
+                  <div class="step-icon"><i class="fa-solid fa-credit-card"></i></div>
+                  <h5 class="fw-bold">Pay Portal Fee</h5>
+                  <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Submit a non-refundable $50 processing fee securely via credit card.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="step-card">
+                  <div class="step-num">4</div>
+                  <div class="step-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                  <h5 class="fw-bold">Review Decision</h5>
+                  <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 0;">Our faculty committee evaluates profiles; decisions arrive within 4-6 weeks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tuition & Scholarship Information -->
+    <section class="section-padding" id="tuition-info">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Tuition Schedule Table -->
+          <div class="col-lg-7" data-aos="fade-up">
+            <span class="badge-venite">FINANCIAL TRANSPARENCY</span>
+            <h2 class="mb-4">Tuition Fees Schedule (Per Year)</h2>
+            <div class="table-responsive">
+              <table class="table table-hover border align-middle bg-white rounded shadow-sm" id="tuition_table">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col" style="padding: 1rem 1.5rem;">Faculty</th>
+                    <th scope="col" style="padding: 1rem;">Undergraduate</th>
+                    <th scope="col" style="padding: 1rem;">Postgraduate</th>
+                    <th scope="col" style="padding: 1rem;">International Premium</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fw-bold" style="padding: 1rem 1.5rem;">Computing</td>
+                    <td style="padding: 1rem;">$8,500</td>
+                    <td style="padding: 1rem;">$11,000</td>
+                    <td style="padding: 1rem;">+$3,000</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold" style="padding: 1rem 1.5rem;">Medicine & Pharmacy</td>
+                    <td style="padding: 1rem;">$14,000</td>
+                    <td style="padding: 1rem;">$18,500</td>
+                    <td style="padding: 1rem;">+$4,500</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold" style="padding: 1rem 1.5rem;">Engineering</td>
+                    <td style="padding: 1rem;">$9,500</td>
+                    <td style="padding: 1rem;">$12,500</td>
+                    <td style="padding: 1rem;">+$3,500</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold" style="padding: 1rem 1.5rem;">Business & Law</td>
+                    <td style="padding: 1rem;">$7,800</td>
+                    <td style="padding: 1rem;">$10,500</td>
+                    <td style="padding: 1rem;">+$2,500</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold" style="padding: 1rem 1.5rem;">Arts & Media</td>
+                    <td style="padding: 1rem;">$6,500</td>
+                    <td style="padding: 1rem;">$8,800</td>
+                    <td style="padding: 1rem;">+$2,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Scholarship Column -->
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="badge-venite">SUPPORT ENGINES</span>
+            <h2 class="mb-4">Scholarships & Grants</h2>
+            <p class="text-muted">At Venite University, we firmly believe financial barriers should never obstruct academic brilliance. We offer numerous automatic and application-based support packages to foster high-integrity achievements:</p>
+            
+            <div class="accordion" id="scholarshipsAccordion">
+              <!-- Scholarship 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingScholar1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScholar1" aria-expanded="true" aria-controls="collapseScholar1">
+                    Chancellor's Academic Merit Award
+                  </button>
+                </h3>
+                <div id="collapseScholar1" class="accordion-collapse collapse show" aria-labelledby="headingScholar1" data-bs-parent="#scholarshipsAccordion">
+                  <div class="accordion-body">
+                    <strong>Award Coverage: 100% Tuition Fees.</strong> Automatically granted to incoming undergraduate students who maintain an outstanding high school GPA (equivalent to A / 3.9+). Renewable annually upon maintaining a 3.7+ CGPA.
+                  </div>
+                </div>
+              </div>
+              <!-- Scholarship 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingScholar2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScholar2" aria-expanded="false" aria-controls="collapseScholar2">
+                    Global Leaders Diversity Grant
+                  </button>
+                </h3>
+                <div id="collapseScholar2" class="accordion-collapse collapse" aria-labelledby="headingScholar2" data-bs-parent="#scholarshipsAccordion">
+                  <div class="accordion-body">
+                    <strong>Award Coverage: $3,000 - $5,000.</strong> Aimed at international candidates from underrepresented territories who have shown remarkable social impact, community advocacy, or athletic dedication. Requires a dedicated essay.
+                  </div>
+                </div>
+              </div>
+              <!-- Scholarship 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingScholar3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseScholar3" aria-expanded="false" aria-controls="collapseScholar3">
+                    STEM Women Innovation Fellowship
+                  </button>
+                </h3>
+                <div id="collapseScholar3" class="accordion-collapse collapse" aria-labelledby="headingScholar3" data-bs-parent="#scholarshipsAccordion">
+                  <div class="accordion-body">
+                    <strong>Award Coverage: 50% Tuition Fees & Lab Stipends.</strong> Dedicated to female candidates applying for Engineering or Computing programs who display superior potential in coding, electrical robotics, or physical systems.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer_section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a class="footer-brand" href="index.html" id="footer_logo_container">
+              <i class="fa-solid fa-graduation-cap text-white" style="font-size: 2rem;"></i>
+              <span>VENITE</span>
+            </a>
+            <p class="mt-3">A world-class university committed to fostering innovative minds, high-integrity leadership, and community development.</p>
+            <div class="social-icons" id="footer_social_icons">
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <h4>Quick Links</h4>
+            <ul class="footer-links" id="footer_links_list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programmes.html">Programmes</a></li>
+              <li><a href="contact.html#tuition-info">Admissions</a></li>
+              <li><a href="index.html#campus_life">Campus Life</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h4>Popular Programmes</h4>
+            <ul class="footer-links" id="footer_programmes_list">
+              <li><a href="programmes.html">Computer Science</a></li>
+              <li><a href="programmes.html">Doctor of Medicine (M.D.)</a></li>
+              <li><a href="programmes.html">Nursing B.Sc.</a></li>
+              <li><a href="programmes.html">Master of Business Admin (MBA)</a></li>
+              <li><a href="programmes.html">Mechanical Engineering</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter to receive the latest academic schedules, open days, and scholarship updates.</p>
+            <form class="newsletter-form" id="newsletter_subscription_form">
+              <input type="email" class="newsletter-input" placeholder="Your email address" aria-label="Newsletter email input" required>
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter button"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom" id="footer_bottom_row">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-6">
+              <p class="mb-0">&copy; 2026 Venite University. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div class="footer-bottom-links" id="footer_bottom_legal_links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" aria-label="Scroll to top button">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JS Script -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

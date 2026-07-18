@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venite University | Inspiring Innovation, Leadership & Excellence</title>
+    <!-- Favicon placeholder (Font Awesome Icon fallback used in navbar) -->
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!-- Preloader Animation -->
+    <div id="preloader" id="loading_animation">
+      <div class="spinner" id="spinner_element"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" id="main_navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo_container">
+          <i class="fa-solid fa-graduation-cap text-primary" style="font-size: 2rem;"></i>
+          <span>VENITE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar_toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar_links_list">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" id="nav_link_home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" id="nav_link_about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programmes.html" id="nav_link_programmes">Programmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" id="nav_link_contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex" id="navbar_btn_container">
+            <a href="contact.html#application-process" class="btn-primary-venite" id="nav_btn_apply">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero_section">
+      <!-- Animated Floating Shapes in Background -->
+      <div class="floating-shapes" id="floating_shapes_container">
+        <div class="shape shape-1" id="float_shape_1"></div>
+        <div class="shape shape-2" id="float_shape_2"></div>
+        <div class="shape shape-3" id="float_shape_3"></div>
+      </div>
+      <div class="container relative-z" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">
+          <div class="col-lg-8" data-aos="fade-right">
+            <span class="badge-venite" style="background: rgba(255,255,255,0.1); color: #fff;">ESTABLISHED 1982</span>
+            <h1 id="hero_headline">Welcome to <br><span>Venite University</span></h1>
+            <p id="hero_subheading">Inspiring Innovation, Leadership, and Excellence. We empower the next generation of global leaders, thinkers, and builders through rigorous academics, cutting-edge research, and a diverse, inclusive community.</p>
+            <div class="hero-btns d-flex gap-3 flex-wrap" id="hero_buttons">
+              <a href="programmes.html" class="btn-primary-venite" id="hero_btn_programmes">
+                Explore Programmes <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="about.html" class="btn-secondary-venite" id="hero_btn_about">
+                Why Venite <i class="fa-solid fa-circle-play text-primary"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview & Statistics Counters -->
+    <section class="section-padding" id="about_preview">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
+            <span class="badge-venite">ABOUT VENITE</span>
+            <h2 class="mb-4">Shaping Minds, <br>Impacting the World</h2>
+            <p class="text-muted mb-4">Founded with the vision to provide a world-class education that fosters innovative ideas, critical inquiry, and global impact, Venite University is an internationally renowned institution where students learn, grow, and lead.</p>
+            <p class="text-muted mb-4">Our campus is a hub of technological breakthroughs and artistic expression, encouraging students to challenge standard boundaries and create lasting, positive change.</p>
+            <a href="about.html" class="btn-secondary-venite" id="about_read_more_btn">Discover Our History <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="row g-4" id="stats_counters_grid">
+              <div class="col-sm-6">
+                <div class="stat-box" id="stat_box_students">
+                  <span class="counter" data-target="15000" data-suffix="+">0</span>
+                  <span class="stat-label">Students</span>
+                  <span class="stat-desc">Representing 60+ countries</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-box" id="stat_box_lecturers">
+                  <span class="counter" data-target="500" data-suffix="+">0</span>
+                  <span class="stat-label">Lecturers</span>
+                  <span class="stat-desc">PhD qualified and industry experts</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-box" id="stat_box_programmes">
+                  <span class="counter" data-target="50" data-suffix="+">0</span>
+                  <span class="stat-label">Programmes</span>
+                  <span class="stat-desc">Accredited degree courses</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-box" id="stat_box_employment">
+                  <span class="counter" data-target="95" data-suffix="%">0</span>
+                  <span class="stat-label">Employment Rate</span>
+                  <span class="stat-desc">Hired within 6 months of graduation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Faculties -->
+    <section class="section-padding section-bg-light" id="featured_faculties">
+      <div class="container text-center">
+        <div class="section-title" data-aos="fade-up">
+          <span class="badge-venite">ACADEMIC EXCELLENCE</span>
+          <h2>Featured Faculties</h2>
+          <p>Venite University offers dynamic and high-ranking departments designed to turn interests into lifelong successful careers.</p>
+        </div>
+        <div class="row g-4 text-start" id="faculties_grid">
+          <!-- Faculty 1: Medicine -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card" id="faculty_medicine_card">
+              <div class="faculty-icon-wrapper" id="faculty_medicine_icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <h4 class="mb-3">Faculty of Medicine</h4>
+              <p class="text-muted">Pioneering medical education, research, and healthcare services. Train in advanced simulated clinical spaces with global experts.</p>
+              <a href="programmes.html" class="faculty-link" id="faculty_medicine_link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Faculty 2: Engineering -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass-card" id="faculty_engineering_card">
+              <div class="faculty-icon-wrapper" id="faculty_engineering_icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h4 class="mb-3">Faculty of Engineering</h4>
+              <p class="text-muted">Building a sustainable future. Explore robotic systems, green infrastructure designs, advanced microchips, and material science.</p>
+              <a href="programmes.html" class="faculty-link" id="faculty_engineering_link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Faculty 3: Computing -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="glass-card" id="faculty_computing_card">
+              <div class="faculty-icon-wrapper" id="faculty_computing_icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h4 class="mb-3">Faculty of Computing</h4>
+              <p class="text-muted">Empowering innovators for the digital era. Specialised paths in Artificial Intelligence, Cybersecurity, and Software Engineering.</p>
+              <a href="programmes.html" class="faculty-link" id="faculty_computing_link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Faculty 4: Business -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-card" id="faculty_business_card">
+              <div class="faculty-icon-wrapper" id="faculty_business_icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h4 class="mb-3">Faculty of Business</h4>
+              <p class="text-muted">Cultivating strategic thinking and entrepreneurial spirits. Accreditations in Finance, Global Management, and Marketing.</p>
+              <a href="programmes.html" class="faculty-link" id="faculty_business_link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Faculty 5: Law -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="glass-card" id="faculty_law_card">
+              <div class="faculty-icon-wrapper" id="faculty_law_icon">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <h4 class="mb-3">Faculty of Law</h4>
+              <p class="text-muted">Promoting justice, advocacy, and ethical leadership. Participate in mock trial courts, international law moot, and human rights clinics.</p>
+              <a href="programmes.html" class="faculty-link" id="faculty_law_link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Faculty 6: Arts -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="glass-card" id="faculty_arts_card">
+              <div class="faculty-icon-wrapper" id="faculty_arts_icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h4 class="mb-3">Faculty of Arts</h4>
+              <p class="text-muted">Exploring cultural heritage, human expression, and communication design. Join robust studios in literature, media, and drama.</p>
+              <a href="programmes.html" class="faculty-link" id="faculty_arts_link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Life -->
+    <section class="section-padding" id="campus_life">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="badge-venite">BEYOND THE CLASSROOM</span>
+          <h2>Campus Life</h2>
+          <p>Discover a vibrant campus filled with athletics, world-class amenities, creative hubs, and lifelong friendships.</p>
+        </div>
+        <div class="row g-4" id="gallery_grid">
+          <!-- Gallery Item 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-item" id="gallery_student_activities">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop" class="gallery-img" alt="Student Collaboration" loading="lazy" referrerPolicy="no-referrer">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Colloquium</span>
+                <h5 class="gallery-title">Student Activities</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 2 -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-item" id="gallery_sports">
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600&auto=format&fit=crop" class="gallery-img" alt="University Sports Meet" loading="lazy" referrerPolicy="no-referrer">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Athletics</span>
+                <h5 class="gallery-title">Sports Leagues</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 3 -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="gallery-item" id="gallery_innovation_hub">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop" class="gallery-img" alt="Robotic Engineering Lab" loading="lazy" referrerPolicy="no-referrer">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Research</span>
+                <h5 class="gallery-title">Innovation Hub</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-item" id="gallery_library">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop" class="gallery-img" alt="University library" loading="lazy" referrerPolicy="no-referrer">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Academia</span>
+                <h5 class="gallery-title">24/7 Digital Library</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 5 -->
+          <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-item" id="gallery_hostels">
+              <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=800&auto=format&fit=crop" class="gallery-img" alt="Student Residence Halls" loading="lazy" referrerPolicy="no-referrer">
+              <div class="gallery-overlay">
+                <span class="gallery-tag">Living</span>
+                <h5 class="gallery-title">Premium Hostels</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section with Bootstrap Carousel -->
+    <section class="section-padding testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="badge-venite" style="background: rgba(255,255,255,0.1); color: #fff;">TESTIMONIALS</span>
+          <h2>What Our Students Say</h2>
+        </div>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="150">
+          <div class="carousel-indicators" id="testimonials_carousel_indicators">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active" id="testimonial_item_1">
+              <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" class="testimonial-img" alt="Samantha Carter" loading="lazy" referrerPolicy="no-referrer">
+                <p class="testimonial-quote">"Venite University provided me with opportunities I couldn't find anywhere else. The professors in the Computing Faculty didn't just teach theory—they involved me in actual AI projects. Today, I am a Lead Engineer at a major Silicon Valley firm."</p>
+                <h5 class="testimonial-author">Samantha Carter</h5>
+                <span class="testimonial-role">B.Sc. Computer Science Alumni</span>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item" id="testimonial_item_2">
+              <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" class="testimonial-img" alt="David Miller" loading="lazy" referrerPolicy="no-referrer">
+                <p class="testimonial-quote">"The clinical facilities at the Faculty of Medicine are outstanding. Performing mock surgeries and clinical rotations on-campus gave me immense confidence before my actual residencies. Venite is unmatched in healthcare training."</p>
+                <h5 class="testimonial-author">Dr. David Miller</h5>
+                <span class="testimonial-role">M.D. Medicine Graduate</span>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item" id="testimonial_item_3">
+              <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop" class="testimonial-img" alt="Amelia Johnson" loading="lazy" referrerPolicy="no-referrer">
+                <p class="testimonial-quote">"As an international student, I was nervous about relocating. The community at Venite welcomed me with open arms. Between athletic events, international food festivals, and my Business program, it truly felt like a home away from home."</p>
+                <h5 class="testimonial-author">Amelia Johnson</h5>
+                <span class="testimonial-role">MBA Student</span>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" id="prev_testimonial_btn">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" id="next_testimonial_btn">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="section-padding" id="latest_news">
+      <div class="container">
+        <div class="section-title text-center" data-aos="fade-up">
+          <span class="badge-venite">UNIVERSITY UPDATES</span>
+          <h2>Latest News & Events</h2>
+          <p>Stay informed about major research achievements, academic partnerships, and campus activities.</p>
+        </div>
+        <div class="row g-4" id="news_cards_grid">
+          <!-- News 1 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="news-card" id="news_card_1">
+              <div class="news-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop" class="news-img" alt="AI Research Summit" loading="lazy" referrerPolicy="no-referrer">
+                <span class="news-badge">RESEARCH</span>
+              </div>
+              <div class="news-content">
+                <span class="news-date"><i class="fa-regular fa-calendar-days me-2"></i>July 15, 2026</span>
+                <h4 class="news-title"><a href="#">Venite Researchers Unlock Breakthrough in AI Diagnostic Accuracy</a></h4>
+                <p class="news-desc">The team at the Faculty of Computing, in collaboration with Medicine, published key findings on deep-learning vision systems for early diagnosis.</p>
+                <a href="#" class="faculty-link" style="margin-top: auto;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- News 2 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="news-card" id="news_card_2">
+              <div class="news-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600&auto=format&fit=crop" class="news-img" alt="Global Leadership Program" loading="lazy" referrerPolicy="no-referrer">
+                <span class="news-badge">CAMPUS</span>
+              </div>
+              <div class="news-content">
+                <span class="news-date"><i class="fa-regular fa-calendar-days me-2"></i>July 08, 2026</span>
+                <h4 class="news-title"><a href="#">Venite Establishes Global Student Leadership Initiative</a></h4>
+                <p class="news-desc">We are partnering with three tier-one international universities to launch high-performance training retreats and student exchanges.</p>
+                <a href="#" class="faculty-link" style="margin-top: auto;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- News 3 -->
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="news-card" id="news_card_3">
+              <div class="news-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop" class="news-img" alt="Renovated campus library" loading="lazy" referrerPolicy="no-referrer">
+                <span class="news-badge">ADMISSIONS</span>
+              </div>
+              <div class="news-content">
+                <span class="news-date"><i class="fa-regular fa-calendar-days me-2"></i>June 28, 2026</span>
+                <h4 class="news-title"><a href="#">Undergraduate Application Portal Opened for Fall 2026</a></h4>
+                <p class="news-desc">Prospective students can now complete and submit applications online. Early application review deadline ends September 1st.</p>
+                <a href="programmes.html" class="faculty-link" style="margin-top: auto;">Apply Guidelines <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section" id="call_to_action">
+      <div class="container" data-aos="fade-up">
+        <h2>Join Venite University Today</h2>
+        <p>Your journey towards innovation, academic excellence, and international impact starts right here. Reach out to secure your future.</p>
+        <a href="contact.html#application-process" class="btn-secondary-venite" style="background: #fff; border: none; padding: 1rem 3rem;" id="cta_apply_btn">
+          Apply Now <i class="fa-solid fa-graduation-cap text-primary"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer_section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a class="footer-brand" href="index.html" id="footer_logo_container">
+              <i class="fa-solid fa-graduation-cap text-white" style="font-size: 2rem;"></i>
+              <span>VENITE</span>
+            </a>
+            <p class="mt-3">A world-class university committed to fostering innovative minds, high-integrity leadership, and community development.</p>
+            <div class="social-icons" id="footer_social_icons">
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <h4>Quick Links</h4>
+            <ul class="footer-links" id="footer_links_list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programmes.html">Programmes</a></li>
+              <li><a href="contact.html#tuition-info">Admissions</a></li>
+              <li><a href="index.html#campus_life">Campus Life</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h4>Popular Programmes</h4>
+            <ul class="footer-links" id="footer_programmes_list">
+              <li><a href="programmes.html">Computer Science</a></li>
+              <li><a href="programmes.html">Doctor of Medicine (M.D.)</a></li>
+              <li><a href="programmes.html">Nursing B.Sc.</a></li>
+              <li><a href="programmes.html">Master of Business Admin (MBA)</a></li>
+              <li><a href="programmes.html">Mechanical Engineering</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter to receive the latest academic schedules, open days, and scholarship updates.</p>
+            <form class="newsletter-form" id="newsletter_subscription_form">
+              <input type="email" class="newsletter-input" placeholder="Your email address" aria-label="Newsletter email input" required>
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter button"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom" id="footer_bottom_row">
+          <div class="row align-items-center text-center text-md-start">
+            <div class="col-md-6">
+              <p class="mb-0">&copy; 2026 Venite University. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div class="footer-bottom-links" id="footer_bottom_legal_links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" aria-label="Scroll to top button">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JS Script -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
