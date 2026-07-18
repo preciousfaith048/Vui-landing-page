@@ -246,4 +246,32 @@ document.addEventListener('DOMContentLoaded', () => {
       mirror: false
     });
   }
+
+  // 10. Dark/Light Theme Toggle
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  if (themeToggleBtn) {
+    const updateToggleIcon = (theme) => {
+      const icon = themeToggleBtn.querySelector('i');
+      if (icon) {
+        if (theme === 'dark') {
+          icon.className = 'fa-solid fa-sun';
+        } else {
+          icon.className = 'fa-solid fa-moon';
+        }
+      }
+    };
+
+    // Set initial icon state based on early theme detection
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    updateToggleIcon(currentTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const activeTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateToggleIcon(newTheme);
+    });
+  }
 });
